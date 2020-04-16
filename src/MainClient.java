@@ -5,7 +5,6 @@ import java.net.UnknownHostException;
 public class MainClient {
 
     public static void main(String[] args) throws InterruptedException {
-
         try(Socket socket = new Socket("127.0.0.1", 3345);
             BufferedReader br =new BufferedReader(new InputStreamReader(System.in));
 //            OutputStream oos = new DataOutputStream(socket.getOutputStream());
@@ -16,7 +15,7 @@ public class MainClient {
             System.out.println("Всем клиентам чата привет, остальным соболезнуем!");
             System.out.println("Введите никнейм:");
             String nickname = br.readLine();
-            System.out.println("Приятной ебли в жопу;)");
+            System.out.println("Приятного общения;)");
 
             Thread thr = new Thread(new Runnable() {
                 @Override
